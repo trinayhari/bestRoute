@@ -1,0 +1,7 @@
+2025-05-02 12:07:57,827 - INFO - Environment variables loaded from .env file
+2025-05-02 12:07:58,381 - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-02 12:07:58,381 - INFO - NumExpr defaulting to 8 threads.
+2025-05-02 12:07:58,577 - INFO - Created new CSV log file at logs/model_calls.csv
+2025-05-02 12:08:05,994 - INFO - Cost tracker initialized with session ID: 20250502120805
+2025-05-02 12:08:11,020 - INFO - Cost tracker initialized with session ID: 20250502120811
+2025-05-02 12:08:11,905 - INFO - Cost tracker initialized with session ID: 20250502120811

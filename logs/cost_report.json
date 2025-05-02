@@ -1,0 +1,13 @@
+{
+  "generated_at": "2025-05-01 13:22:09",
+  "current_session": {
+    "session_id": "20250501132209",
+    "total_cost": 0,
+    "total_tokens": 0,
+    "calls": 0,
+    "models": {}
+  },
+  "today": {
+    "date": "2025-05-01",
+    "total_cost": 0.000125,
+    "total_tokens": 

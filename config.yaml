@@ -1,0 +1,163 @@
+# OpenRouter LLM Configuration
+
+# Default model to use when no specific model is selected
+default_model: anthropic/claude-3-haiku
+
+# Optimization target for the advanced router
+# Options: "balanced", "speed", "cost", "quality"
+optimization_target: "balanced"
+
+# Model configurations
+models:
+  # Anthropic Models
+  anthropic/claude-3-haiku:
+    name: Claude 3 Haiku
+    description: Fast and efficient model for routine tasks
+    provider: Anthropic
+    strengths:
+      - Quick responses
+      - Cost-effective
+      - Reliable for simple tasks
+    cost_per_1k_tokens: 0.00025
+    max_tokens: 4000
+    context_length: 200000
+    temperature: 0.7
+
+  anthropic/claude-3-sonnet:
+    name: Claude 3 Sonnet
+    description: Balanced model with strong reasoning and creativity
+    provider: Anthropic
+    strengths:
+      - Strong reasoning
+      - Creative writing
+      - Good context understanding
+    cost_per_1k_tokens: 0.003
+    max_tokens: 4000
+    context_length: 200000
+    temperature: 0.7
+
+  anthropic/claude-3-opus:
+    name: Claude 3 Opus
+    description: Most powerful model for complex tasks
+    provider: Anthropic
+    strengths:
+      - Deep reasoning
+      - Nuanced understanding
+      - Complex problem solving
+    cost_per_1k_tokens: 0.015
+    max_tokens: 4000
+    context_length: 200000
+    temperature: 0.7
+
+  # OpenAI Models
+  openai/gpt-4o:
+    name: GPT-4o
+    description: Latest OpenAI model with balanced capabilities
+    provider: OpenAI
+    strengths:
+      - Versatile
+      - Strong reasoning
+      - Good coding abilities
+    cost_per_1k_tokens: 0.005
+    max_tokens: 4000
+    context_length: 128000
+    temperature: 0.7
+
+  openai/gpt-3.5-turbo:
+    name: GPT-3.5 Turbo
+    description: Fast and cost-effective model
+    provider: OpenAI
+    strengths:
+      - Speed
+      - Cost efficiency
+      - General knowledge
+    cost_per_1k_tokens: 0.0005
+    max_tokens: 4000
+    context_length: 16000
+    temperature: 0.7
+
+  # Mistral Models
+  mistralai/mistral-7b-instruct:
+    name: Mistral 7B
+    description: Compact and efficient open-source model
+    provider: Mistral AI
+    strengths:
+      - Fast inference
+      - Efficient resource usage
+      - Good general capabilities
+    cost_per_1k_tokens: 0.0002
+    max_tokens: 4000
+    context_length: 8000
+    temperature: 0.7
+
+  mistralai/mixtral-8x7b-instruct:
+    name: Mixtral 8x7B
+    description: Powerful open-source mixture-of-experts model
+    provider: Mistral AI
+    strengths:
+      - Strong general capabilities
+      - Good reasoning
+      - Cost-effective compared to proprietary models
+    cost_per_1k_tokens: 0.0006
+    max_tokens: 4000
+    context_length: 32000
+    temperature: 0.7
+
+# Prompt type configurations for routing
+prompt_types:
+  coding:
+    patterns:
+      - "\\bcode\\b"
+      - "\\bpython\\b"
+      - "\\bjavascript\\b"
+      - "\\bfunction\\b"
+      - "\\bclass\\b"
+      - "\\bimport\\b"
+      - "\\bdef\\b"
+    preferred_model: openai/gpt-4o
+
+  creative:
+    patterns:
+      - "\\bwrite\\b.*\\bstory\\b"
+      - "\\bcreate\\b.*\\bpoem\\b"
+      - "\\bimagine\\b"
+      - "\\bcreative\\b"
+    preferred_model: anthropic/claude-3-sonnet
+
+  analysis:
+    patterns:
+      - "\\banalyze\\b"
+      - "\\bexplain\\b"
+      - "\\bcompare\\b"
+      - "\\bwhy\\b"
+      - "\\bexamine\\b"
+    preferred_model: anthropic/claude-3-opus
+
+  quick_questions:
+    patterns:
+      - "\\bwhat is\\b"
+      - "\\bhow to\\b"
+      - "\\bwhen\\b"
+      - "\\bwhere\\b"
+    preferred_model: anthropic/claude-3-haiku
+
+# Rule-based router settings for different prompt types and lengths
+# These settings determine which models to use based on the prompt type and length
+rule_based_router:
+  # Code prompt models
+  code_models:
+    short: openai/gpt-4o # Short code snippets (0-500 tokens)
+    medium: openai/gpt-4o # Medium code tasks (501-2000 tokens)
+    long: anthropic/claude-3-opus # Long/complex coding tasks (2001+ tokens)
+
+  # Summary prompt models
+  summary_models:
+    short: anthropic/claude-3-haiku # Quick summaries (0-500 tokens)
+    medium: anthropic/claude-3-sonnet # Medium-length summaries (501-2000 tokens)
+    long: anthropic/claude-3-opus # In-depth summaries (2001+ tokens)
+
+  # Question prompt models
+  question_models:
+    short: mistralai/mistral-7b-instruct # Quick questions (0-500 tokens)
+    medium: anthropic/claude-3-haiku # Medium complexity questions (501-2000 tokens)
+    long: anthropic/claude-3-sonnet # Complex questions (2001+ tokens)

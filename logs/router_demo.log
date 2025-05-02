@@ -1,0 +1,93 @@
+2025-05-01 13:33:27,857 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:33:28,235 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:33:28,235 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:33:28,383 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133328
+2025-05-01 13:33:28,447 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:28,447 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:28,447 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:28,447 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:28,447 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:28,447 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:37,395 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:38,160 - root - ERROR - Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 200000 tokens. However, you requested about 200026 tokens (26 of text input, 200000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:33:38,160 - rule_based_router - ERROR - Error sending prompt to anthropic/claude-3-haiku: Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 200000 tokens. However, you requested about 200026 tokens (26 of text input, 200000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:33:38,160 - root - ERROR - Error in test_full_prompt_cycle: Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 200000 tokens. However, you requested about 200026 tokens (26 of text input, 200000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:33:49,419 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:33:49,581 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:33:49,581 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:33:49,697 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133349
+2025-05-01 13:33:49,754 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:49,755 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:49,755 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:49,755 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:49,755 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:49,755 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:54,564 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:33:55,255 - root - ERROR - Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 200000 tokens. However, you requested about 200026 tokens (26 of text input, 200000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:33:55,255 - rule_based_router - ERROR - Error sending prompt to anthropic/claude-3-haiku: Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 200000 tokens. However, you requested about 200026 tokens (26 of text input, 200000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:33:55,255 - root - ERROR - Error in test_full_prompt_cycle: Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 200000 tokens. However, you requested about 200026 tokens (26 of text input, 200000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:36:19,811 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:36:20,017 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:36:20,017 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:36:20,154 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133620
+2025-05-01 13:36:20,218 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:20,218 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:20,218 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:20,218 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:20,219 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:20,219 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:26,725 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:26,725 - rule_based_router - INFO - Estimated prompt tokens: 13, max response tokens: 4000
+2025-05-01 13:36:30,624 - root - INFO - {"timestamp": "2025-05-01T13:36:30.624282", "model": "anthropic/claude-3-haiku", "latency": 3.8983428478240967, "status": "success", "prompt_tokens": 28, "completion_tokens": 482, "total_tokens": 510}
+2025-05-01 13:36:30,627 - cost_tracker - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=510, cost=$0.000128
+2025-05-01 13:36:30,627 - rule_based_router - INFO - Interaction logged: {'timestamp': '2025-05-01T13:36:30.627681', 'prompt_type': 'summary', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 28, 'completion_tokens': 482, 'total_tokens': 510, 'latency': 3.8983428478240967, 'duration': 3.898844, 'cost': 0.0001275}
+2025-05-01 13:36:42,896 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:36:43,074 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:36:43,074 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:36:43,204 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133643
+2025-05-01 13:36:43,264 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:43,264 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:43,264 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:43,264 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:43,264 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:43,265 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:51,269 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:36:51,446 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:36:51,446 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:36:51,572 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133651
+2025-05-01 13:36:51,631 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:51,631 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:51,631 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:51,631 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:51,631 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:51,631 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:56,896 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:36:56,897 - rule_based_router - INFO - Estimated prompt tokens: 7, max response tokens: 4000
+2025-05-01 13:36:57,991 - root - INFO - {"timestamp": "2025-05-01T13:36:57.991862", "model": "anthropic/claude-3-haiku", "latency": 1.0944468975067139, "status": "success", "prompt_tokens": 21, "completion_tokens": 14, "total_tokens": 35}
+2025-05-01 13:36:57,993 - cost_tracker - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=35, cost=$0.000009
+2025-05-01 13:36:57,993 - rule_based_router - INFO - Interaction logged: {'timestamp': '2025-05-01T13:36:57.993623', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 21, 'completion_tokens': 14, 'total_tokens': 35, 'latency': 1.0944468975067139, 'duration': 1.094897, 'cost': 8.750000000000001e-06}
+2025-05-01 13:37:09,383 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:37:09,576 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:37:09,576 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:37:09,708 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133709
+2025-05-01 13:37:09,805 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:09,805 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:09,805 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:09,805 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:09,806 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:09,806 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:18,737 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:18,738 - rule_based_router - INFO - Estimated prompt tokens: 11, max response tokens: 4000
+2025-05-01 13:37:23,340 - root - INFO - {"timestamp": "2025-05-01T13:37:23.340409", "model": "anthropic/claude-3-haiku", "latency": 4.601731061935425, "status": "success", "prompt_tokens": 25, "completion_tokens": 483, "total_tokens": 508}
+2025-05-01 13:37:23,344 - cost_tracker - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=508, cost=$0.000127
+2025-05-01 13:37:23,344 - rule_based_router - INFO - Interaction logged: {'timestamp': '2025-05-01T13:37:23.344802', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 25, 'completion_tokens': 483, 'total_tokens': 508, 'latency': 4.601731061935425, 'duration': 4.602432, 'cost': 0.000127}
+2025-05-01 13:37:35,114 - root - INFO - Environment variables loaded from .env file
+2025-05-01 13:37:35,302 - numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 13:37:35,302 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 13:37:35,428 - cost_tracker - INFO - Cost tracker initialized with session ID: 20250501133735
+2025-05-01 13:37:35,529 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:35,529 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:35,529 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:35,529 - rule_based_router - INFO - Prompt classified as summary (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:35,529 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:37:35,529 - rule_based_router - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku

@@ -1,0 +1,94 @@
+2025-05-01 12:57:55,663 - INFO - Environment variables loaded from .env file
+2025-05-01 12:57:56,947 - INFO - {"timestamp": "2025-05-01T12:57:56.947910", "model": "anthropic/claude-3-haiku", "latency": 1.2844538688659668, "status": "success", "prompt_tokens": 33, "completion_tokens": 27, "total_tokens": 60}
+2025-05-01 12:57:58,895 - INFO - {"timestamp": "2025-05-01T12:57:58.895201", "model": "openai/gpt-3.5-turbo", "latency": 0.9411759376525879, "status": "success", "prompt_tokens": 37, "completion_tokens": 20, "total_tokens": 57}
+2025-05-01 12:58:15,888 - INFO - {"timestamp": "2025-05-01T12:58:15.888425", "model": "mistralai/mistral-7b-instruct", "latency": 15.987773895263672, "status": "success", "prompt_tokens": 34, "completion_tokens": 85, "total_tokens": 119}
+2025-05-01 12:58:21,015 - INFO - {"timestamp": "2025-05-01T12:58:21.015331", "model": "anthropic/claude-3-sonnet", "latency": 4.121139049530029, "status": "success", "prompt_tokens": 33, "completion_tokens": 179, "total_tokens": 212}
+2025-05-01 12:58:27,876 - INFO - {"timestamp": "2025-05-01T12:58:27.876700", "model": "openai/gpt-4o", "latency": 5.855887174606323, "status": "success", "prompt_tokens": 35, "completion_tokens": 156, "total_tokens": 191}
+2025-05-01 12:58:35,212 - INFO - {"timestamp": "2025-05-01T12:58:35.212429", "model": "mistralai/mixtral-8x7b-instruct", "latency": 6.329851865768433, "status": "success", "prompt_tokens": 37, "completion_tokens": 220, "total_tokens": 257}
+2025-05-01 12:58:51,306 - INFO - {"timestamp": "2025-05-01T12:58:51.306203", "model": "anthropic/claude-3-opus", "latency": 15.090866327285767, "status": "success", "prompt_tokens": 40, "completion_tokens": 435, "total_tokens": 475}
+2025-05-01 12:59:08,426 - INFO - {"timestamp": "2025-05-01T12:59:08.426205", "model": "openai/gpt-4o", "latency": 16.11506676673889, "status": "success", "prompt_tokens": 39, "completion_tokens": 642, "total_tokens": 681}
+2025-05-01 12:59:18,925 - INFO - {"timestamp": "2025-05-01T12:59:18.925199", "model": "mistralai/mixtral-8x7b-instruct", "latency": 9.495764017105103, "status": "success", "prompt_tokens": 44, "completion_tokens": 662, "total_tokens": 706}
+2025-05-01 12:59:27,172 - INFO - {"timestamp": "2025-05-01T12:59:27.172405", "model": "openai/gpt-4o", "latency": 7.238210201263428, "status": "success", "prompt_tokens": 41, "completion_tokens": 496, "total_tokens": 537}
+2025-05-01 12:59:49,096 - INFO - {"timestamp": "2025-05-01T12:59:49.095950", "model": "anthropic/claude-3-opus", "latency": 20.92220401763916, "status": "success", "prompt_tokens": 38, "completion_tokens": 660, "total_tokens": 698}
+2025-05-01 13:00:06,202 - INFO - {"timestamp": "2025-05-01T13:00:06.201959", "model": "mistralai/mixtral-8x7b-instruct", "latency": 16.10246205329895, "status": "success", "prompt_tokens": 43, "completion_tokens": 365, "total_tokens": 408}
+2025-05-01 13:00:08,468 - INFO - {"timestamp": "2025-05-01T13:00:08.468836", "model": "anthropic/claude-3-haiku", "latency": 1.2603530883789062, "status": "success", "prompt_tokens": 34, "completion_tokens": 79, "total_tokens": 113}
+2025-05-01 13:00:10,912 - INFO - {"timestamp": "2025-05-01T13:00:10.912240", "model": "openai/gpt-3.5-turbo", "latency": 1.437804937362671, "status": "success", "prompt_tokens": 35, "completion_tokens": 68, "total_tokens": 103}
+2025-05-01 13:00:22,076 - INFO - {"timestamp": "2025-05-01T13:00:22.076106", "model": "mistralai/mistral-7b-instruct", "latency": 10.158124208450317, "status": "success", "prompt_tokens": 34, "completion_tokens": 84, "total_tokens": 118}
+2025-05-01 13:00:23,330 - ERROR - OpenRouter API Error (Status 400): {"error": {"message": "invalid/model-name is not a valid model ID", "code": 400}, "user_id": "user_2wT0h09xZG04N0jc0B5wPLpj8Ti"}
+2025-05-01 13:00:27,632 - ERROR - Unexpected response format: {"error": {"message": "This endpoint's maximum context length is 16385 tokens. However, you requested about 17269 tokens (16269 of text input, 1000 in the output). Please reduce the length of either one, or use the \"middle-out\" transform to compress your prompt automatically.", "code": 400, "metadata": {"provider_name": null}}}
+2025-05-01 13:00:29,347 - ERROR - Unexpected response format: {"error": {"message": "Provider returned error", "code": 400, "metadata": {"raw": "{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"messages: at least one message is required\"}}", "provider_name": "Google"}}, "user_id": "user_2wT0h09xZG04N0jc0B5wPLpj8Ti"}
+2025-05-01 13:03:08,295 - INFO - Environment variables loaded from .env file
+2025-05-01 13:03:09,297 - INFO - {"timestamp": "2025-05-01T13:03:09.297742", "model": "anthropic/claude-3-haiku", "latency": 1.0019018650054932, "status": "success", "prompt_tokens": 33, "completion_tokens": 27, "total_tokens": 60}
+2025-05-01 13:03:11,090 - INFO - {"timestamp": "2025-05-01T13:03:11.090312", "model": "openai/gpt-3.5-turbo", "latency": 0.7882928848266602, "status": "success", "prompt_tokens": 37, "completion_tokens": 23, "total_tokens": 60}
+2025-05-01 13:03:14,827 - INFO - {"timestamp": "2025-05-01T13:03:14.827477", "model": "mistralai/mistral-7b-instruct", "latency": 2.7324719429016113, "status": "success", "prompt_tokens": 34, "completion_tokens": 111, "total_tokens": 145}
+2025-05-01 13:51:34,114 - INFO - Environment variables loaded from .env file
+2025-05-01 13:51:34,175 - INFO - Cost tracker initialized with session ID: 20250501135134
+2025-05-01 13:51:45,510 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:51:45,510 - INFO - Estimated prompt tokens: 6, max response tokens: 4000
+2025-05-01 13:51:46,432 - INFO - {"timestamp": "2025-05-01T13:51:46.432641", "model": "anthropic/claude-3-haiku", "latency": 0.9218099117279053, "status": "success", "prompt_tokens": 20, "completion_tokens": 19, "total_tokens": 39}
+2025-05-01 13:51:46,437 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=39, cost=$0.000010
+2025-05-01 13:51:46,437 - INFO - Interaction logged: {'timestamp': '2025-05-01T13:51:46.437622', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 20, 'completion_tokens': 19, 'total_tokens': 39, 'latency': 0.9218099117279053, 'duration': 0.922916, 'cost': 9.75e-06}
+2025-05-01 13:52:28,583 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:52:28,584 - INFO - Estimated prompt tokens: 6, max response tokens: 4000
+2025-05-01 13:52:32,905 - INFO - {"timestamp": "2025-05-01T13:52:32.904993", "model": "anthropic/claude-3-haiku", "latency": 4.319800138473511, "status": "success", "prompt_tokens": 45, "completion_tokens": 525, "total_tokens": 570}
+2025-05-01 13:52:32,911 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=570, cost=$0.000143
+2025-05-01 13:52:32,912 - INFO - Interaction logged: {'timestamp': '2025-05-01T13:52:32.911977', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 45, 'completion_tokens': 525, 'total_tokens': 570, 'latency': 4.319800138473511, 'duration': 4.320703, 'cost': 0.00014250000000000002}
+2025-05-01 13:53:34,081 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:53:34,081 - INFO - Estimated prompt tokens: 36, max response tokens: 4000
+2025-05-01 13:53:41,828 - INFO - {"timestamp": "2025-05-01T13:53:41.828548", "model": "anthropic/claude-3-haiku", "latency": 7.746888160705566, "status": "success", "prompt_tokens": 608, "completion_tokens": 1146, "total_tokens": 1754}
+2025-05-01 13:53:41,837 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=1754, cost=$0.000438
+2025-05-01 13:53:41,837 - INFO - Interaction logged: {'timestamp': '2025-05-01T13:53:41.837650', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 608, 'completion_tokens': 1146, 'total_tokens': 1754, 'latency': 7.746888160705566, 'duration': 7.748492, 'cost': 0.0004385}
+2025-05-01 13:53:55,870 - INFO - Estimated prompt tokens: 5, max response tokens: 4000
+2025-05-01 13:53:57,934 - INFO - {"timestamp": "2025-05-01T13:53:57.934516", "model": "openai/gpt-4o", "latency": 2.0630290508270264, "status": "success", "prompt_tokens": 1527, "completion_tokens": 41, "total_tokens": 1568}
+2025-05-01 13:53:57,939 - INFO - API call logged: model=openai/gpt-4o, tokens=1568, cost=$0.007840
+2025-05-01 13:53:57,939 - INFO - Interaction logged: {'timestamp': '2025-05-01T13:53:57.939417', 'prompt_type': 'question', 'model': 'openai/gpt-4o', 'prompt_tokens': 1527, 'completion_tokens': 41, 'total_tokens': 1568, 'latency': 2.0630290508270264, 'duration': 2.064712, 'cost': 0.00784}
+2025-05-01 13:54:22,398 - INFO - Prompt classified as code (short), selected model: openai/gpt-4o
+2025-05-01 13:54:22,398 - INFO - Estimated prompt tokens: 73, max response tokens: 4000
+2025-05-01 13:54:35,369 - INFO - {"timestamp": "2025-05-01T13:54:35.369434", "model": "openai/gpt-4o", "latency": 12.970293998718262, "status": "success", "prompt_tokens": 1647, "completion_tokens": 570, "total_tokens": 2217}
+2025-05-01 13:54:35,372 - INFO - API call logged: model=openai/gpt-4o, tokens=2217, cost=$0.011085
+2025-05-01 13:54:35,372 - INFO - Interaction logged: {'timestamp': '2025-05-01T13:54:35.372731', 'prompt_type': 'code', 'model': 'openai/gpt-4o', 'prompt_tokens': 1647, 'completion_tokens': 570, 'total_tokens': 2217, 'latency': 12.970293998718262, 'duration': 12.970837, 'cost': 0.011085000000000001}
+2025-05-01 13:54:57,232 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 13:54:57,232 - INFO - Estimated prompt tokens: 10, max response tokens: 4000
+2025-05-01 13:55:02,011 - INFO - {"timestamp": "2025-05-01T13:55:02.010945", "model": "anthropic/claude-3-haiku", "latency": 4.778250217437744, "status": "success", "prompt_tokens": 2574, "completion_tokens": 628, "total_tokens": 3202}
+2025-05-01 13:55:02,017 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=3202, cost=$0.000800
+2025-05-01 13:55:02,017 - INFO - Interaction logged: {'timestamp': '2025-05-01T13:55:02.017787', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 2574, 'completion_tokens': 628, 'total_tokens': 3202, 'latency': 4.778250217437744, 'duration': 4.779389, 'cost': 0.0008005}
+2025-05-01 14:00:37,879 - INFO - Environment variables loaded from .env file
+2025-05-01 14:00:37,941 - INFO - Cost tracker initialized with session ID: 20250501140037
+2025-05-01 14:03:42,225 - INFO - {"timestamp": "2025-05-01T14:03:42.225350", "model": "anthropic/claude-3-haiku", "latency": 2.975428819656372, "status": "success", "prompt_tokens": 108, "completion_tokens": 312, "total_tokens": 420}
+2025-05-01 14:03:46,053 - INFO - {"timestamp": "2025-05-01T14:03:46.053118", "model": "mistralai/mistral-7b-instruct", "latency": 3.824460744857788, "status": "success", "prompt_tokens": 118, "completion_tokens": 280, "total_tokens": 398}
+2025-05-01 14:03:55,234 - INFO - {"timestamp": "2025-05-01T14:03:55.234467", "model": "openai/gpt-4o", "latency": 9.178952932357788, "status": "success", "prompt_tokens": 91, "completion_tokens": 434, "total_tokens": 525}
+2025-05-01 14:06:33,398 - INFO - Environment variables loaded from .env file
+2025-05-01 14:14:47,762 - INFO - Environment variables loaded from .env file
+2025-05-01 14:14:48,317 - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 14:14:48,317 - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 14:24:06,845 - INFO - Cost tracker initialized with session ID: 20250501142406
+2025-05-01 14:24:08,537 - INFO - Cost tracker initialized with session ID: 20250501142408
+2025-05-01 14:24:18,765 - INFO - Cost tracker initialized with session ID: 20250501142418
+2025-05-01 14:27:33,903 - INFO - Environment variables loaded from .env file
+2025-05-01 14:27:34,361 - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 14:27:34,361 - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 14:27:38,747 - INFO - Cost tracker initialized with session ID: 20250501142738
+2025-05-01 14:27:39,680 - INFO - Cost tracker initialized with session ID: 20250501142739
+2025-05-01 14:28:15,455 - INFO - {"timestamp": "2025-05-01T14:28:15.455636", "model": "anthropic/claude-3-haiku", "latency": 3.8231570720672607, "status": "success", "prompt_tokens": 25, "completion_tokens": 454, "total_tokens": 479}
+2025-05-01 14:28:37,234 - INFO - {"timestamp": "2025-05-01T14:28:37.234618", "model": "mistralai/mixtral-8x7b-instruct", "latency": 21.77519917488098, "status": "success", "prompt_tokens": 27, "completion_tokens": 389, "total_tokens": 416}
+2025-05-01 14:28:40,617 - INFO - {"timestamp": "2025-05-01T14:28:40.616794", "model": "openai/gpt-3.5-turbo", "latency": 3.38080096244812, "status": "success", "prompt_tokens": 28, "completion_tokens": 191, "total_tokens": 219}
+2025-05-01 14:37:27,962 - INFO - Environment variables loaded from .env file
+2025-05-01 14:37:28,490 - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-01 14:37:28,490 - INFO - NumExpr defaulting to 8 threads.
+2025-05-01 14:37:30,951 - INFO - Cost tracker initialized with session ID: 20250501143730
+2025-05-01 14:37:36,587 - INFO - Routing strategy set to: balanced
+2025-05-01 14:37:36,670 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 14:37:36,670 - INFO - Estimated prompt tokens: 6, max response tokens: 4000
+2025-05-01 14:37:37,647 - INFO - {"timestamp": "2025-05-01T14:37:37.647372", "model": "anthropic/claude-3-haiku", "latency": 0.9769389629364014, "status": "success", "prompt_tokens": 20, "completion_tokens": 19, "total_tokens": 39}
+2025-05-01 14:37:37,650 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=39, cost=$0.000010
+2025-05-01 14:37:37,650 - INFO - Interaction logged: {'timestamp': '2025-05-01T14:37:37.650283', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 20, 'completion_tokens': 19, 'total_tokens': 39, 'latency': 0.9769389629364014, 'duration': 0.977529, 'cost': 9.75e-06}
+2025-05-01 14:38:02,850 - INFO - Routing strategy set to: balanced
+2025-05-01 14:38:02,851 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-01 14:38:02,851 - INFO - Estimated prompt tokens: 15, max response tokens: 4000
+2025-05-01 14:38:07,481 - INFO - {"timestamp": "2025-05-01T14:38:07.481822", "model": "anthropic/claude-3-haiku", "latency": 4.630291938781738, "status": "success", "prompt_tokens": 53, "completion_tokens": 643, "total_tokens": 696}
+2025-05-01 14:38:07,490 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=696, cost=$0.000174
+2025-05-01 14:38:07,490 - INFO - Interaction logged: {'timestamp': '2025-05-01T14:38:07.490422', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 53, 'completion_tokens': 643, 'total_tokens': 696, 'latency': 4.630291938781738, 'duration': 4.631931, 'cost': 0.00017400000000000003}
+2025-05-01 14:38:47,162 - INFO - Cost tracker initialized with session ID: 20250501143847
+2025-05-01 14:39:05,352 - INFO - Cost tracker initialized with session ID: 20250501143905
+2025-05-01 15:32:28,229 - INFO - Environment variables loaded from .env file
+2025-05-02 11:55:41,796 - INFO - Cost tracker initialized with session ID: 20250502115541
