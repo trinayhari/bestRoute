@@ -53,7 +53,13 @@ A Streamlit-based chatbot application that uses rule-based routing to select the
 Run the Streamlit application:
 
 ```
-streamlit run chatbot_app.py
+streamlit run unified_app.py
+```
+
+Or, for the multi-page application:
+
+```
+streamlit run Home.py
 ```
 
 The application will be available at [http://localhost:8501](http://localhost:8501).

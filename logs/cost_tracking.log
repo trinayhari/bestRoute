@@ -343,3 +343,25 @@
 2025-05-02 12:08:05,994 - INFO - Cost tracker initialized with session ID: 20250502120805
 2025-05-02 12:08:11,020 - INFO - Cost tracker initialized with session ID: 20250502120811
 2025-05-02 12:08:11,905 - INFO - Cost tracker initialized with session ID: 20250502120811
+2025-05-02 13:03:16,405 - INFO - Cost tracker initialized with session ID: 20250502130316
+2025-05-02 13:09:05,611 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=39, cost=$0.000010
+2025-05-02 13:09:05,611 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=39, cost=$0.000010
+2025-05-02 13:09:05,611 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=39, cost=$0.000010
+2025-05-02 13:10:16,795 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=60, cost=$0.000012
+2025-05-02 13:10:16,795 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=60, cost=$0.000012
+2025-05-02 13:10:16,795 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=60, cost=$0.000012
+2025-05-02 13:10:34,325 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=90, cost=$0.000018
+2025-05-02 13:10:34,325 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=90, cost=$0.000018
+2025-05-02 13:10:34,325 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=90, cost=$0.000018
+2025-05-02 13:11:09,247 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=35, cost=$0.000009
+2025-05-02 13:11:09,247 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=35, cost=$0.000009
+2025-05-02 13:11:09,247 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=35, cost=$0.000009
+2025-05-02 13:11:55,787 - INFO - API call logged: model=anthropic/claude-3-opus, tokens=680, cost=$0.010200
+2025-05-02 13:11:55,787 - INFO - API call logged: model=anthropic/claude-3-opus, tokens=680, cost=$0.010200
+2025-05-02 13:11:55,787 - INFO - API call logged: model=anthropic/claude-3-opus, tokens=680, cost=$0.010200
+2025-05-02 13:18:56,705 - INFO - Cost tracker initialized with session ID: 20250502131856
+2025-05-02 13:24:33,033 - INFO - Cost tracker initialized with session ID: 20250502132433
+2025-05-02 13:24:34,607 - INFO - Cost tracker initialized with session ID: 20250502132434
+2025-05-02 13:24:38,146 - INFO - Cost tracker initialized with session ID: 20250502132438
+2025-05-02 13:27:24,741 - INFO - Cost tracker initialized with session ID: 20250502132724
+2025-05-02 16:40:11,045 - INFO - Cost tracker initialized with session ID: 20250502164011

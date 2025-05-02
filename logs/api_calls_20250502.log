@@ -5,3 +5,62 @@
 2025-05-02 12:08:05,994 - INFO - Cost tracker initialized with session ID: 20250502120805
 2025-05-02 12:08:11,020 - INFO - Cost tracker initialized with session ID: 20250502120811
 2025-05-02 12:08:11,905 - INFO - Cost tracker initialized with session ID: 20250502120811
+2025-05-02 13:03:16,340 - INFO - Environment variables loaded from .env file
+2025-05-02 13:03:16,405 - INFO - Cost tracker initialized with session ID: 20250502130316
+2025-05-02 13:06:38,958 - INFO - Environment variables loaded from .env file
+2025-05-02 13:07:12,188 - INFO - Environment variables loaded from .env file
+2025-05-02 13:09:04,724 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-02 13:09:04,724 - INFO - Estimated prompt tokens: 6, max response tokens: 4000
+2025-05-02 13:09:05,601 - INFO - {"timestamp": "2025-05-02T13:09:05.600863", "model": "anthropic/claude-3-haiku", "latency": 0.8757238388061523, "status": "success", "prompt_tokens": 20, "completion_tokens": 19, "total_tokens": 39}
+2025-05-02 13:09:05,611 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=39, cost=$0.000010
+2025-05-02 13:09:05,612 - INFO - Model call: anthropic/claude-3-haiku | Type: question | Strategy: balanced | Tokens: 39 | Cost: $0.000000 | Latency: 0.88s | Success: True
+2025-05-02 13:09:05,614 - ERROR - Error writing to CSV log file: 'Index' object has no attribute '_format_native_types'
+2025-05-02 13:09:05,614 - INFO - Interaction logged: {'timestamp': '2025-05-02T13:09:05.614111', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 20, 'completion_tokens': 19, 'total_tokens': 39, 'latency': 0.8757238388061523, 'duration': 0.879141, 'cost': 9.75e-06}
+2025-05-02 13:10:11,017 - INFO - Routing strategy set to: cost
+2025-05-02 13:10:16,061 - INFO - Routing strategy set to: cost
+2025-05-02 13:10:16,062 - INFO - Prompt classified as question (short), selected model: mistralai/mistral-7b-instruct
+2025-05-02 13:10:16,062 - INFO - Estimated prompt tokens: 6, max response tokens: 4000
+2025-05-02 13:10:16,789 - INFO - {"timestamp": "2025-05-02T13:10:16.789007", "model": "mistralai/mistral-7b-instruct", "latency": 0.7267658710479736, "status": "success", "prompt_tokens": 45, "completion_tokens": 15, "total_tokens": 60}
+2025-05-02 13:10:16,795 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=60, cost=$0.000012
+2025-05-02 13:10:16,795 - INFO - Model call: mistralai/mistral-7b-instruct | Type: question | Strategy: cost | Tokens: 60 | Cost: $0.000000 | Latency: 0.73s | Success: True
+2025-05-02 13:10:16,796 - ERROR - Error writing to CSV log file: 'Index' object has no attribute '_format_native_types'
+2025-05-02 13:10:16,797 - INFO - Interaction logged: {'timestamp': '2025-05-02T13:10:16.797006', 'prompt_type': 'question', 'model': 'mistralai/mistral-7b-instruct', 'prompt_tokens': 45, 'completion_tokens': 15, 'total_tokens': 60, 'latency': 0.7267658710479736, 'duration': 0.727819, 'cost': 1.2e-05}
+2025-05-02 13:10:22,529 - INFO - Routing strategy set to: speed
+2025-05-02 13:10:32,815 - INFO - Routing strategy set to: speed
+2025-05-02 13:10:32,815 - INFO - Prompt classified as question (short), selected model: mistralai/mistral-7b-instruct
+2025-05-02 13:10:32,815 - INFO - Estimated prompt tokens: 7, max response tokens: 4000
+2025-05-02 13:10:34,323 - INFO - {"timestamp": "2025-05-02T13:10:34.323776", "model": "mistralai/mistral-7b-instruct", "latency": 1.507676124572754, "status": "success", "prompt_tokens": 73, "completion_tokens": 17, "total_tokens": 90}
+2025-05-02 13:10:34,325 - INFO - API call logged: model=mistralai/mistral-7b-instruct, tokens=90, cost=$0.000018
+2025-05-02 13:10:34,326 - INFO - Model call: mistralai/mistral-7b-instruct | Type: question | Strategy: speed | Tokens: 90 | Cost: $0.000000 | Latency: 1.51s | Success: True
+2025-05-02 13:10:34,326 - ERROR - Error writing to CSV log file: 'Index' object has no attribute '_format_native_types'
+2025-05-02 13:10:34,326 - INFO - Interaction logged: {'timestamp': '2025-05-02T13:10:34.326790', 'prompt_type': 'question', 'model': 'mistralai/mistral-7b-instruct', 'prompt_tokens': 73, 'completion_tokens': 17, 'total_tokens': 90, 'latency': 1.507676124572754, 'duration': 1.508105, 'cost': 1.8e-05}
+2025-05-02 13:11:08,513 - INFO - Routing strategy set to: balanced
+2025-05-02 13:11:08,514 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-haiku
+2025-05-02 13:11:08,514 - INFO - Estimated prompt tokens: 7, max response tokens: 4000
+2025-05-02 13:11:09,242 - INFO - {"timestamp": "2025-05-02T13:11:09.242832", "model": "anthropic/claude-3-haiku", "latency": 0.728313684463501, "status": "success", "prompt_tokens": 21, "completion_tokens": 14, "total_tokens": 35}
+2025-05-02 13:11:09,247 - INFO - API call logged: model=anthropic/claude-3-haiku, tokens=35, cost=$0.000009
+2025-05-02 13:11:09,247 - INFO - Model call: anthropic/claude-3-haiku | Type: question | Strategy: balanced | Tokens: 35 | Cost: $0.000000 | Latency: 0.73s | Success: True
+2025-05-02 13:11:09,248 - ERROR - Error writing to CSV log file: 'Index' object has no attribute '_format_native_types'
+2025-05-02 13:11:09,248 - INFO - Interaction logged: {'timestamp': '2025-05-02T13:11:09.248827', 'prompt_type': 'question', 'model': 'anthropic/claude-3-haiku', 'prompt_tokens': 21, 'completion_tokens': 14, 'total_tokens': 35, 'latency': 0.728313684463501, 'duration': 0.72957, 'cost': 8.750000000000001e-06}
+2025-05-02 13:11:14,312 - INFO - Routing strategy set to: cost
+2025-05-02 13:11:32,951 - INFO - Routing strategy set to: quality
+2025-05-02 13:11:34,197 - INFO - Routing strategy set to: quality
+2025-05-02 13:11:34,199 - INFO - Prompt classified as question (short), selected model: anthropic/claude-3-opus
+2025-05-02 13:11:34,199 - INFO - Estimated prompt tokens: 10, max response tokens: 4000
+2025-05-02 13:11:55,783 - INFO - {"timestamp": "2025-05-02T13:11:55.783617", "model": "anthropic/claude-3-opus", "latency": 21.584211826324463, "status": "success", "prompt_tokens": 46, "completion_tokens": 634, "total_tokens": 680}
+2025-05-02 13:11:55,787 - INFO - API call logged: model=anthropic/claude-3-opus, tokens=680, cost=$0.010200
+2025-05-02 13:11:55,787 - INFO - Model call: anthropic/claude-3-opus | Type: question | Strategy: quality | Tokens: 680 | Cost: $0.000000 | Latency: 21.58s | Success: True
+2025-05-02 13:11:55,788 - ERROR - Error writing to CSV log file: 'Index' object has no attribute '_format_native_types'
+2025-05-02 13:11:55,788 - INFO - Interaction logged: {'timestamp': '2025-05-02T13:11:55.788570', 'prompt_type': 'question', 'model': 'anthropic/claude-3-opus', 'prompt_tokens': 46, 'completion_tokens': 634, 'total_tokens': 680, 'latency': 21.584211826324463, 'duration': 21.584853, 'cost': 0.010199999999999999}
+2025-05-02 13:18:56,650 - INFO - Environment variables loaded from .env file
+2025-05-02 13:18:56,705 - INFO - Cost tracker initialized with session ID: 20250502131856
+2025-05-02 13:24:29,262 - INFO - Environment variables loaded from .env file
+2025-05-02 13:24:33,033 - INFO - Cost tracker initialized with session ID: 20250502132433
+2025-05-02 13:24:34,607 - INFO - Cost tracker initialized with session ID: 20250502132434
+2025-05-02 13:24:38,146 - INFO - Cost tracker initialized with session ID: 20250502132438
+2025-05-02 13:27:06,857 - INFO - Environment variables loaded from .env file
+2025-05-02 13:27:14,409 - INFO - Environment variables loaded from .env file
+2025-05-02 13:27:24,741 - INFO - Cost tracker initialized with session ID: 20250502132724
+2025-05-02 13:40:47,889 - INFO - Environment variables loaded from .env file
+2025-05-02 16:40:08,154 - INFO - Environment variables loaded from .env file
+2025-05-02 16:40:11,045 - INFO - Cost tracker initialized with session ID: 20250502164011

@@ -105,7 +105,12 @@ def get_model_response(model: str, messages: List[Dict[str, str]]) -> Dict[str, 
 
 def streamlit_interface():
     """Streamlit interface for model comparison"""
-    st.set_page_config(page_title="LLM Model Comparison", page_icon="🔍", layout="wide")
+    st.set_page_config(
+        page_title="OpenRouter Chatbot Suite",
+        page_icon="🤖",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
     
     st.title("OpenRouter Model Comparison")
     st.markdown("""

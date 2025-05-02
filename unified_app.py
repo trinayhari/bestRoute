@@ -29,6 +29,8 @@ except ImportError as e:
     sys.exit(1)
 
 # Import functionality from existing applications
+import model_comparison
+import cost_dashboard
 from chatbot_app import (
     load_config as load_chatbot_config,
     initialize_router,
@@ -37,9 +39,6 @@ from chatbot_app import (
     process_user_input,
     display_cost_summary
 )
-
-import model_comparison
-import cost_dashboard
 
 # Page config
 st.set_page_config(
@@ -192,10 +191,8 @@ def initialize_app_state():
     """Initialize all session state variables needed across apps"""
     # Initialize chatbot state
     initialize_chatbot_state()
-    
     # Initialize model comparison state
     model_comparison.initialize_session_state()
-    
     # Set current app if not set
     if "current_app" not in st.session_state:
         st.session_state.current_app = "chatbot"
@@ -224,92 +221,9 @@ def display_shared_sidebar(config, router):
     
     # App-specific sidebar content based on current tab
     if st.session_state.current_app == "chatbot":
-        # Show chatbot sidebar
         st.sidebar.markdown("### Chatbot Settings")
-        
-        # Manual model selection toggle
-        st.session_state.manual_model_selection = st.sidebar.checkbox(
-            "Manual Model Selection", 
-            value=st.session_state.manual_model_selection
-        )
-        
-        # Model selection
-        if st.session_state.manual_model_selection:
-            st.sidebar.markdown("### Model Selection")
-            
-            # Get available models
-            available_models = sorted(config.get("models", {}).keys())
-            
-            if available_models:
-                # Set default to the first model if none selected
-                if not st.session_state.selected_model:
-                    st.session_state.selected_model = available_models[0]
-                    
-                # Model dropdown
-                st.session_state.selected_model = st.sidebar.selectbox(
-                    "Select Model", 
-                    available_models,
-                    index=available_models.index(st.session_state.selected_model)
-                )
-                
-                # Show model info
-                model_info = config.get("models", {}).get(st.session_state.selected_model, {})
-                if model_info:
-                    st.sidebar.markdown(f"**Provider:** {model_info.get('provider', 'Unknown')}")
-                    st.sidebar.markdown(f"**Cost:** ${model_info.get('cost_per_1k_tokens', 0):.6f} per 1K tokens")
-                    st.sidebar.markdown(f"**Context Length:** {model_info.get('context_length', 'Unknown')}")
-                    
-                    strengths = model_info.get("strengths", [])
-                    if strengths:
-                        st.sidebar.markdown("**Strengths:**")
-                        for s in strengths:
-                            st.sidebar.markdown(f"- {s}")
-        else:
-            st.sidebar.markdown("Using rule-based model selection")
-            st.sidebar.markdown("Model will be selected based on prompt type and length:")
-            st.sidebar.markdown("- **Code**: For programming and technical questions")
-            st.sidebar.markdown("- **Summary**: For summarizing or condensing information")
-            st.sidebar.markdown("- **Question**: For general questions and inquiries")
-        
-        st.sidebar.markdown("---")
-        
-        # Settings
-        st.sidebar.markdown("### Settings")
-        
-        # Toggle for showing metrics
-        st.session_state.show_metrics = st.sidebar.checkbox(
-            "Show Response Metrics", 
-            value=st.session_state.show_metrics
-        )
-        
-        # System prompt
-        st.sidebar.markdown("### System Prompt")
-        
-        # Default system prompt
-        default_system_prompt = "You are a helpful AI assistant."
-        
-        # Get the system prompt from session state or set the default
-        if "system_prompt" not in st.session_state:
-            st.session_state.system_prompt = default_system_prompt
-        
-        # System prompt input
-        system_prompt = st.sidebar.text_area(
-            "System Prompt",
-            value=st.session_state.system_prompt,
-            height=100
-        )
-        
-        # Update system prompt in session state
-        st.session_state.system_prompt = system_prompt
-        
-        # Reset button for chat
-        if st.sidebar.button("Reset Conversation"):
-            st.session_state.messages = []
-            st.session_state.metrics = []
-            st.session_state.conversation_cost = 0.0
-            st.rerun()
-    
-    elif st.session_state.current_app == "model_comparison":
+        st.sidebar.markdown("(Settings can be added here)")
+    if st.session_state.current_app == "model_comparison":
         # Show model comparison sidebar using function from model_comparison.py
         model_comparison.display_sidebar(config, router)
     
@@ -337,7 +251,6 @@ def on_tab_change():
         2: "cost_dashboard"
     }
     
-    # Get the selected tab index from Streamlit (this is a workaround)
     for i in range(3):
         if st.session_state.get(f"tab_{i}", False):
             st.session_state.current_app = tab_index_to_app[i]
@@ -354,13 +267,8 @@ def main():
     # Initialize router
     router = initialize_router(config)
     
-    if router is None:
-        st.error("Failed to initialize the router. Please check your configuration.")
-        return
-    
-    # Main tabs
     tab1, tab2, tab3 = st.tabs([
-        "💬 Chatbot", 
+        "💬 Chatbot",
         "🔍 Model Comparison", 
         "📊 Cost Dashboard"
     ])
@@ -374,29 +282,21 @@ def main():
     display_shared_sidebar(config, router)
     
     # Render appropriate app based on selected tab
-    with tab1:  # Chatbot
+    with tab1:
         if st.session_state.current_app == "chatbot":
             st.title("OpenRouter Chatbot")
-            
-            # Display chat messages
             display_chat_messages()
-            
-            # Process user input
             process_user_input(router)
-            
-            # Display cost summary
             if st.session_state.metrics:
                 st.markdown("---")
                 display_cost_summary()
     
-    with tab2:  # Model Comparison
+    with tab2:
         if st.session_state.current_app == "model_comparison":
-            # Run model comparison app
             model_comparison.main()
     
-    with tab3:  # Cost Dashboard
+    with tab3:
         if st.session_state.current_app == "cost_dashboard":
-            # Run cost dashboard app
             cost_dashboard.main()
 
 if __name__ == "__main__":
