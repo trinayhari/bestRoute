@@ -10,69 +10,152 @@ A Streamlit-based chatbot application that uses rule-based routing to select the
 - **Usage Analytics**: Shows conversation summary with costs, token usage, and model distribution
 - **Manual Override**: Option to manually select a specific model instead of using automatic routing
 
-## Getting Started
+## Detailed Installation Guide
 
 ### Prerequisites
 
 - Python 3.8 or higher
 - OpenRouter API key (get one at [OpenRouter](https://openrouter.ai))
+- Git (for cloning the repository)
+- pip (Python package installer)
 
-### Installation
+### Step-by-Step Installation
 
-1. Clone this repository:
+1. **Clone the Repository**
 
-   ```
+   ```bash
    git clone <repository-url>
    cd openrouter_chatbot
    ```
 
-2. Install dependencies:
+2. **Create and Activate Virtual Environment** (Recommended)
 
+   ```bash
+   # On Windows
+   python -m venv venv
+   .\venv\Scripts\activate
+
+   # On macOS/Linux
+   python3 -m venv venv
+   source venv/bin/activate
    ```
+
+3. **Install Dependencies**
+
+   ```bash
    pip install -r requirements.txt
    ```
 
-3. Set up your API key:
+4. **Set Up Environment Variables**
 
-   Either:
+   Create a `.env` file in the project root:
 
-   - Create a `.env` file in the project root with:
-     ```
-     OPENROUTER_API_KEY=your-api-key-here
-     ```
+   ```bash
+   # On Windows
+   echo OPENROUTER_API_KEY=your-api-key-here > .env
 
-   Or:
+   # On macOS/Linux
+   echo "OPENROUTER_API_KEY=your-api-key-here" > .env
+   ```
 
-   - Export the API key as an environment variable:
-     ```
-     export OPENROUTER_API_KEY=your-api-key-here
-     ```
+   Or use the setup script:
+
+   ```bash
+   python setup_env.py
+   ```
+
+5. **Verify Installation**
+   ```bash
+   # Check if all dependencies are installed correctly
+   pip list
+   ```
 
 ### Running the Application
 
-Run the Streamlit application:
+1. **Start the Main Application**
+
+   ```bash
+   # For the unified app
+   streamlit run unified_app.py
+
+   # For the multi-page application
+   streamlit run Home.py
+   ```
+
+2. **Access the Application**
+
+   - Open your browser and go to [http://localhost:8501](http://localhost:8501)
+   - The application should load with the chat interface
+
+3. **Additional Features**
+   - Run the cost dashboard:
+     ```bash
+     streamlit run cost_dashboard.py
+     ```
+   - Run model comparison:
+     ```bash
+     streamlit run model_comparison.py
+     ```
+
+### Troubleshooting Common Issues
+
+1. **API Key Issues**
+
+   - Verify your API key is correctly set in `.env`
+   - Check if the API key is valid at OpenRouter
+   - Try running `python check_api_key.py` to verify
+
+2. **Dependency Issues**
+
+   - If you encounter missing module errors:
+     ```bash
+     pip install -r requirements.txt --upgrade
+     ```
+   - For specific version conflicts:
+     ```bash
+     pip install streamlit==1.30.0 pandas==2.1.4
+     ```
+
+3. **Port Conflicts**
+
+   - If port 8501 is in use:
+     ```bash
+     streamlit run Home.py --server.port 8502
+     ```
+
+4. **File Permission Issues**
+   - Ensure the `logs` directory is writable:
+     ```bash
+     mkdir -p logs
+     chmod 755 logs
+     ```
+
+### Directory Structure
 
 ```
-streamlit run unified_app.py
+openrouter_chatbot/
+├── src/
+│   ├── api/              # API client implementations
+│   ├── components/       # UI components
+│   ├── config/          # Configuration utilities
+│   └── utils/           # Utility functions
+├── pages/               # Streamlit pages
+├── logs/               # Application logs
+├── .env                # Environment variables
+├── config.yaml         # Application configuration
+├── requirements.txt    # Python dependencies
+└── README.md          # This file
 ```
 
-Or, for the multi-page application:
+### Configuration
 
-```
-streamlit run Home.py
-```
-
-The application will be available at [http://localhost:8501](http://localhost:8501).
-
-## Configuration
-
-The application uses the `config.yaml` file for model configurations and routing rules. You can:
+The application uses `config.yaml` for model configurations and routing rules. You can:
 
 - Add/remove models
 - Adjust token limits and costs
 - Modify routing preferences for different prompt types
 
-## Cost Management
+### Cost Management
 
 The application tracks cost per request and conversation totals. You can:
 
@@ -80,22 +163,13 @@ The application tracks cost per request and conversation totals. You can:
 - See aggregate spending by model
 - Monitor token usage and response latency
 
-## Dashboard
+### Dashboard
 
 For more detailed cost analytics, you can run the cost dashboard:
 
-```
+```bash
 streamlit run cost_dashboard.py
 ```
-
-## Troubleshooting
-
-If you encounter issues:
-
-1. Check your API key is set correctly
-2. Ensure all dependencies are installed
-3. Verify your `.env` file is in the correct location
-4. Check the logs in the `logs` directory
 
 ## License
 
